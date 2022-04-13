@@ -7,8 +7,10 @@ public class StatService {
      * @param incomes - array of incomes
      * @return - index of first max value
      */
+
     public long findMax(long[] incomes) {
-        long current_max_index = 5;
+        int[] mas = new int [7];
+        long current_max_index = 0;
         long current_max = incomes[0];
         for (long income : incomes)
             if (current_max < income)
